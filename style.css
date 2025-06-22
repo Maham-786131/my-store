@@ -1,0 +1,53 @@
+body {
+  font-family: sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #f0f0f0;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero, .contact-form {
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 500px;
+}
+
+input, textarea, button {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
